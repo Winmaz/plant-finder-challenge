@@ -1,0 +1,26 @@
+<h3>San-Francisco plant list</h3>
+<table class="minimalistBlack" *ngIf="plantData.length > 0">
+ <tr>
+
+      <th>Common_Name</th>
+      <th>Plant_Type</th>
+      <th>Bloom_Time </th>
+      <th>Flower_Color</th>
+      <th>Soil_Type </th>
+      <th>Habitat_Value </th>
+    </tr>
+    <tr *ngFor="let item of plantData; let i = index">
+      <th>{{item.common_name}}</th>
+      <th>{{item.plant_type}}</th>
+      <th>{{item.bloom_time}} </th>
+      <th>{{item.flower_color}}</th>
+      <th>{{item.soil_type}} </th>
+      <th> {{item.habitat_value}} </th>
+    </tr>
+</table>
+
+
+
+
+
+
